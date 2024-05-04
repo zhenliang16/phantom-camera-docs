@@ -37,7 +37,7 @@ pcam.get_look_at_damping()
 </Property>
 
 
-<Property propertyName="look_at_damping_value" propertyType="float" propertyDefault="false">
+<Property propertyName="look_at_damping_value" propertyType="float" propertyDefault="0.25">
 <template v-slot:propertyDescription>
 
 Defines the damping amount. The ideal range should be somewhere between 0-1, likely somewhere around 0.1-0.25.
@@ -55,7 +55,7 @@ Higher value = slower / heavier camera movement.
 
 ::: details Example
 ```gdscript
-pcam.set_look_at_damping_value(true)
+pcam.set_look_at_damping_value(0.25)
 ```
 :::
 
